@@ -59,5 +59,6 @@ window.addEventListener('click', function(event){
         // Отображение статуса корзины (пустая / полная)
         toggleCartStatus()
 
+        calcCartPrice()
     }
 })

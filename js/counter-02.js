@@ -26,6 +26,13 @@ window.addEventListener('click', function(event){
             // Отображение статуса корзины (пустая / полная)
             toggleCartStatus()
 
+            calcCartPrice()
         }
     }
+
+    //Проверка на клик по + или - внутри корзины
+    if(event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')){
+        calcCartPrice()
+    }
+
 })
